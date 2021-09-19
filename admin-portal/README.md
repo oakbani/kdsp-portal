@@ -28,9 +28,3 @@ https://docs.djangoproject.com/en/3.2/intro/tutorial02/#playing-with-the-api
 python manage.py createsuperuser
 
 heroku run python manage.py createsuperuser
-
-admin
-admin
-
-
-https://stark-brook-59231.herokuapp.com/
