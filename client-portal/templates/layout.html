@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block links %}{% endblock %}
+  </head>
+  <body>
+    <header class="u-clearfix u-custom-color-1 u-header u-header" id="sec-b774">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a
+          href="https://kdsp.org.pk"
+          class="u-image u-logo u-image-1"
+          data-image-width="150"
+          data-image-height="107"
+        >
+          <img
+            src="..\static/assets/logo-new-kdsp.png"
+            alt="KDSP Logo"
+            class="u-logo-image u-logo-image-1"
+          />
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse">
+            <a class="u-button-style u-nav-link" href="#">
+              <svg>
+                <use
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#menu-hamburger"
+                ></use>
+              </svg>
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <symbol
+                    id="menu-hamburger"
+                    viewBox="0 0 16 16"
+                    style="width: 16px; height: 16px"
+                  >
+                    <rect y="1" width="16" height="2"></rect>
+                    <rect y="7" width="16" height="2"></rect>
+                    <rect y="13" width="16" height="2"></rect>
+                  </symbol>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled">
+              <li class="u-nav-item">
+                <a class="u-button-style u-nav-link" href="{{url_for('home')}}"
+                  >Home</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link"
+                  href="{{url_for('khandani_sahara.index')}}"
+                  >Khandani Sahara</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link"
+                  href="{{url_for('sehat_health_care.index')}}"
+                  >Sehat Health Care</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link"
+                  href="{{url_for('taleem_aur_hunar.index')}}"
+                  >Taleem or Hunar</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link"
+                  href="{{url_for('contact.index')}}"
+                  >Contact</a
+                >
+              </li>
+               <li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://kdsp-portal.herokuapp.com/admin/">Admin Portal</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="container">{% block container %}{% endblock %}</div>
+
+    <footer
+      class="u-align-center u-clearfix u-footer u-grey-80 u-footer"
+      id="sec-484b"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">
+          KDSP 2021. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
