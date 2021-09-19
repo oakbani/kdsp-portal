@@ -1,0 +1,8 @@
+{
+    "SECRET_KEY": "9OLWxND4o83j4K4iuopO",
+    "DB_NAME": "dr0orro1dg0ju",
+    "DB_PORT": 5432,
+    "DB_USER": "almpppijwpspzy",
+    "DB_PASS": "c826a7e980485ebc36f0721f71878ee408932ec1a32097f1761283f94a0c9e2e",
+    "DB_HOST": "ec2-54-220-195-236.eu-west-1.compute.amazonaws.com"
+}

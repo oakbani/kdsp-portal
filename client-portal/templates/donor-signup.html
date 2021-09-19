@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+{% block links %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Register Yourself">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Sign up - Donor</title>
+    <link rel="stylesheet" href="..\static\css\nicepage.css" media="screen">
+<link rel="stylesheet" href="/static/css/Sign-up---Donor.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/static/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/static/js/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.25.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "static\assets\logo-new-kdsp.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Sign up - Donor">
+    <meta property="og:type" content="website">
+{% endblock %}
+{% block container %}
+    <section class="u-clearfix u-section-1" id="sec-98e8">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">Register Yourself<br>
+        </h2>
+        <div class="u-expanded-width u-form u-form-1">
+          <form action="{{url_for('khandani_sahara.sign_up_donor')}}" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
+            <div class="u-form-group u-form-name">
+              <label for="name-db2b" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Enter your Name" id="name-db2b" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+            </div>
+            <div class="u-form-email u-form-group">
+              <label for="email-db2b" class="u-form-control-hidden u-label"></label>
+              <input type="email" placeholder="Enter a valid email address" id="email-db2b" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+            </div>
+            <div class="u-form-group u-form-phone u-form-group-3">
+              <label for="phone-0355" class="u-form-control-hidden u-label"></label>
+              <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Enter your phone (e.g. +923232815645)" id="phone-0355" name="phone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+            </div>
+            <div class="u-align-center u-form-group u-form-submit">
+              <a href="#" class="u-black u-border-none u-btn u-btn-submit u-button-style u-btn-1">Submit</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success"></div>
+            <div class="u-form-send-error u-form-send-message"> Thank you! We will contact you shortly! </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+          </form>
+        </div>
+      </div>
+    </section>
+{% endblock %}
